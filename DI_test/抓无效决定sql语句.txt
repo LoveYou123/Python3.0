@@ -1,0 +1,29 @@
+CREATE TABLE `cases_infos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id自增',
+  `tio` text COMMENT '案件标题',
+  `cid` varchar(255) DEFAULT NULL COMMENT '案件id',
+  `ridn` varchar(255) DEFAULT NULL COMMENT '决定号',
+  `ridd` varchar(255) DEFAULT NULL COMMENT '决定日',
+  `riapo` varchar(255) DEFAULT NULL COMMENT '请求人',
+  `rilb` varchar(255) DEFAULT NULL COMMENT '法律依据',
+  `ano` varchar(255) DEFAULT NULL COMMENT '申请号',
+  `ans` varchar(255) DEFAULT NULL COMMENT '申请号2',
+  `ad` varchar(255) DEFAULT NULL COMMENT '申请日',
+  `ridt` varchar(255) DEFAULT NULL COMMENT '复审决定',
+  `pk` varchar(255) DEFAULT NULL COMMENT '专利类型',
+  `ridv` varchar(255) DEFAULT NULL COMMENT '复审决定结果',
+  `case_url` varchar(255) DEFAULT NULL COMMENT '案件url',
+  `req_url` varchar(255) DEFAULT NULL COMMENT '请求url接口',
+  `page` varchar(255) DEFAULT NULL COMMENT '请求页数',
+  `create_time` varchar(255) DEFAULT NULL COMMENT '抓取时间',
+  PRIMARY KEY (`id`),
+  KEY `cid` (`cid`),
+  KEY `ridn` (`ridn`),
+  KEY `create_time` (`create_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+
+create database zhishichanquan；
